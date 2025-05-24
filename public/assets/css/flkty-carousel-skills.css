@@ -1,0 +1,27 @@
+* {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+.gallery {
+  margin: 20px !important;
+  overflow: hidden !important;
+}
+
+.gallery-cell {
+  width: 250px !important;
+  height: 250px !important;
+  margin-right: 25px !important;
+  margin-top: 5px !important;
+  /* background: #8C8 !important; */
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block !important;
+  text-align: center !important;
+  /*content: counter(gallery-cell) !important; --> aangezien ik de reviews in de gallery-cell wil plaatsen, is dit overbodig */
+  line-height: 200px !important;
+  font-size: 80px !important;
+  color: white !important;
+}

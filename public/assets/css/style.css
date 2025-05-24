@@ -1,0 +1,105 @@
+body {
+    /* background: url("../imgs/achtergrond.jpg"); */
+    background: linear-gradient(135deg, hsl(246, 40%, 14%), #35306e, #2b2b4b);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+/*main {*/
+/*    backdrop-filter: blur(2px);*/
+/*}*/
+
+.hero {
+    border: yellow solid 1px;
+    color: red;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.homepage-card:hover {
+    transform: scale(105%);
+}
+
+.project-card:hover {
+    transform: scale(105%);
+}
+
+
+/* Background grid animation */
+.animated-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: linear-gradient(transparent 19px, rgba(255,255,255,0.02) 1px),
+                    linear-gradient(90deg, transparent 19px, rgba(255,255,255,0.02) 1px);
+  background-size: 20px 20px;
+  z-index: -1;
+  animation: moveGrid 1.5s linear infinite;
+  pointer-events:none; /* So it doesn't block clicks */
+}
+
+/* Animation for grid movement */
+@keyframes moveGrid {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-20px, -20px);
+  }
+}
+
+
+@media screen and (min-width: 358px) and (max-width: 432px) and (orientation: portrait) {
+    /* Homepagina */
+    .hero-section {
+        margin-block: 25% !important;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse !important;
+    }
+
+    .about-me-card {
+        object-position: center !important;
+    }
+
+    /* CV pagina */
+    .cv-items {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+
+    .cv-card {
+        margin-block: 25% !important;
+    }
+
+
+    /* Projects pagina */
+    .project-card:first-child {
+        margin-top: 25% !important;
+    }
+
+    .project-card:last-child {
+        margin-bottom: 25% !important;
+    }
+
+    .project-container:hover {
+        transform: none !important;
+    }
+
+    /* Over Mij pagina */
+    .about-me-page-container {
+        margin-block: 25% !important;
+    }
+
+    /* Contact pagina */
+    .contact-card {
+        margin-block: 25% !important;
+    }
+
+    .contact-card-content {
+        flex-direction: column-reverse !important;
+    }
+}
