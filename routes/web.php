@@ -9,23 +9,25 @@ use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/cv', function () {
     $experiences = Ervaring::all();
     $opleidingen = Education::all()->sortByDesc("start");
-
-    return view('cv', [
-        "ervaringen" => $experiences->sortByDesc("start"),
-        "opleidingen" => $opleidingen
-    ]);
-});
-
-Route::get('/projects', function () {
     $allProjects = Project::all()->sortByDesc("end");;
-    return view('projects', ["projects" => $allProjects]);
+    return view('landing', ["ervaringen" => $experiences, "opleidingen" => $opleidingen, "projecten" => $allProjects]);
 });
+
+// Route::get('/cv', function () {
+    
+
+//     return view('cv', [
+//         "ervaringen" => $experiences->sortByDesc("start"),
+//         "opleidingen" => $opleidingen
+//     ]);
+// });
+
+// Route::get('/projects', function () {
+   
+//     return view('projects', ["projects" => $allProjects]);
+// });
 
 Route::get('/admin', function() {
     $projects = Project::all();
