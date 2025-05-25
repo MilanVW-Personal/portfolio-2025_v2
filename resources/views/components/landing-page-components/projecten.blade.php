@@ -1,166 +1,62 @@
+@php
+   use Illuminate\Support\Str;
+@endphp
+
 <!-- Portfolio Section -->
 <section id="portfolio" class="portfolio section light-background">
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Projecten</h2>
-            <p>Hieronder kan je alle projecten, waar ik aan gewerkt heb, terug vinden van recentst naar oudst.</p>
+            <p>Hieronder kan je alle projecten, waar ik al aan gewerkt heb, bekijken, gerangschikt van meest recent naar oudst.</p>
         </div><!-- End Section Title -->
         <div class="container">
             <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
                 <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter="*" class="filter-active">Alles</li>
                 <li data-filter=".filter-website">Website</li>
                 <li data-filter=".filter-app">Applicatie</li>
-                <li data-filter=".filter-games">Branding</li>
+                <li data-filter=".filter-platform">Platform</li>
+                <li data-filter=".filter-game">Games</li>
                 </ul><!-- End Portfolio Filters -->
 
                 <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
-                    <div class="portfolio-content h-100">
-                    <img src="assets/img/imgs/projects/project2.png" class="img-fluid" alt="" style="object-fit: cover; width: 416px; height: 312px; object-position: top;">
-                    <div class="portfolio-info">
-                        <h4>Website epicgroup.be</h4>
-                        <p>Tweede product van de stage waarbij ik van nul, een nieuwe site moest maken bedoeld voor evenementen.</p>
-                        <a href="assets/img/imgs/projects/project2.png" title="Project Epic Group" data-gallery="portfolio-gallery-website" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
+                @foreach($projecten as $pr) 
+                    @php
+                        $type = "";
+                        $link = "";
+                        if (Str::contains($pr->link, ".be"))
+                            $type = "website";
+                        else if (Str::contains($pr->projectName, "platform", ignoreCase: true))
+                            $type = "platform";
+                        else if (Str::contains($pr->projectName, "app", ignoreCase: true))
+                            $type = "app";
+                        else if (Str::contains($pr->projectName, "game", ignoreCase: true) || Str::contains($pr->projectName, "spel", ignoreCase: true))
+                            $type = "game";
+                        else 
+                            $type = "website";
 
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <div class="portfolio-content h-100">
-                    <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>Product 1</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                        if ($pr->link !== "/") {
+                            if (!Str::contains($pr->link, "https://"))
+                                $link = "https://".$pr->link;
+                            else 
+                                $link = $pr->link;
+                        }
+                   
+                    @endphp
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-{{$type}}">
+                        <div class="portfolio-content h-100">
+                        <img src="{{url($pr->thumbnailImage)}}" class="img-fluid w-[488px] h-[281px] object-cover" alt="{{$pr->projectName}}">
+                        <div class="portfolio-info">
+                            <h4>{{$pr->projectName}}</h4>
+                            <p class="px-2">{{ $pr->shortDesc }}</p>
+                            <a href="{{url($pr->thumbnailImage)}}" title="{{ $pr->projectName }}" data-gallery="portfolio-gallery-website" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                            <a href="{{$link}}" title="Bekijk dit project live" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                        </div>
+                        </div>
                     </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <div class="portfolio-content h-100">
-                    <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>Branding 1</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                    <div class="portfolio-content h-100">
-                    <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>Books 1</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <div class="portfolio-content h-100">
-                    <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 2</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <div class="portfolio-content h-100">
-                    <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>Product 2</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <div class="portfolio-content h-100">
-                    <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>Branding 2</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                    <div class="portfolio-content h-100">
-                    <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>Books 2</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <div class="portfolio-content h-100">
-                    <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>App 3</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <div class="portfolio-content h-100">
-                    <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>Product 3</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <div class="portfolio-content h-100">
-                    <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>Branding 3</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                    <div class="portfolio-content h-100">
-                    <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>Books 3</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                    </div>
-                    </div>
-                </div><!-- End Portfolio Item -->
-
+                @endforeach
             </div><!-- End Portfolio Container -->
         </div>
     </div>
