@@ -9,7 +9,7 @@ use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $experiences = Ervaring::all();
+    $experiences = Ervaring::all()->sortByDesc("start");
     $opleidingen = Education::all()->sortByDesc("start");
     $allProjects = Project::all()->sortByDesc("end");;
     return view('landing', ["ervaringen" => $experiences, "opleidingen" => $opleidingen, "projecten" => $allProjects]);

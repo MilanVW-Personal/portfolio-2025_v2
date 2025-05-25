@@ -13,6 +13,7 @@ class Ervaring extends Model
         "ervaringNaam",
         "ervaringDesc",
         "ervaringAdresGoogleMaps",
+        "locatie",
     ];
 
     protected $casts = [
