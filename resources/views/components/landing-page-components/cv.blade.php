@@ -1,3 +1,69 @@
+@php
+    function changeDateLanguage($month_of_startDate, $month_of_endDate, $startDate, $endDate) {
+        switch ($month_of_startDate) {
+            case 'January':
+                echo "Januari".' '.$startDate->format("Y");
+                break;
+            case 'February':
+                echo "Februari".' '.$startDate->format("Y");
+                break;
+            case 'March':
+                echo "Maart".' '.$startDate->format("Y");
+                break;
+            case 'May':
+                echo "Mei".' '.$startDate->format("Y");
+                break;
+            case 'June':
+                echo "Juni".' '.$startDate->format("Y");
+                break;
+            case 'July':
+                echo "Juli".' '.$startDate->format("Y");
+                break;
+            case 'August':
+                echo "Augustus".' '.$startDate->format("Y");
+                break;
+            case 'October':
+                echo "Oktober".' '.$startDate->format("Y");
+                break;
+            default:
+                # code...
+                break;
+        }
+
+        echo " - ";
+
+        switch ($month_of_endDate) {
+            case 'January':
+                echo "Januari".' '.$endDate->format("Y");
+                break;
+            case 'February':
+                echo "Februari".' '.$endDate->format("Y");
+                break;
+            case 'March':
+                echo "Maart".' '.$endDate->format("Y");
+                break;
+            case 'May':
+                echo "Mei".' '.$endDate->format("Y");
+                break;
+            case 'June':
+                echo "Juni".' '.$endDate->format("Y");
+                break;
+            case 'July':
+                echo "Juli".' '.$endDate->format("Y");
+                break;
+            case 'August':
+                echo "Augustus".' '.$endDate->format("Y");
+                break;
+            case 'October':
+                echo "Oktober".' '.$endDate->format("Y");
+                break;
+            default:
+                # code...
+                break;
+        }
+    }
+@endphp
+
 <section id="resume" class="resume section">
     <div class="container section-title" data-aos="fade-up">
         <h2>CV</h2>
@@ -64,7 +130,7 @@
                         <h4>{{$ervaring->ervaringNaam}}</h4>
                         <h5>
                             @if($ervaring->start->format("Y-m-d") !== $ervaring->end->format("Y-m-d"))
-                                {{$ervaring->start->format("F Y"). ' - ' . $ervaring->end->format('F Y')}}:
+                                {{changeDateLanguage($ervaring->start->format("F"), $ervaring->end->format("F"), $ervaring->start, $ervaring->end)}}:
                             @else
                                 {{$ervaring->start->format("d F Y").' ('.$ervaring->start->format("H\ui").' - '.$ervaring->end->format("H\ui").')'}}:
                             @endif
