@@ -6,13 +6,15 @@ use App\Http\Controllers\ProjectController;
 use App\Models\Ervaring;
 use App\Models\Education;
 use App\Models\Project;
+use App\Models\LearnedSkill as LearnedSkill;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $experiences = Ervaring::all()->sortByDesc("start");
     $opleidingen = Education::all()->sortByDesc("start");
-    $allProjects = Project::all()->sortByDesc("end");;
-    return view('landing', ["ervaringen" => $experiences, "opleidingen" => $opleidingen, "projecten" => $allProjects]);
+    $allProjects = Project::all()->sortByDesc("end");
+    $aangeleerdeSkills = LearnedSkill::all();
+    return view('landing', ["ervaringen" => $experiences, "opleidingen" => $opleidingen, "projecten" => $allProjects, "aangeleerdeSkills" => $aangeleerdeSkills]);
 });
 
 // Route::get('/cv', function () {

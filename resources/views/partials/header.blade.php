@@ -25,6 +25,7 @@
 
   <!-- Main CSS File -->
   <link href="{{ url("assets/css/main.css") }}" rel="stylesheet">
+  <link href="{{ url("assets/css/icon-sizes-skills.css") }}" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- =======================================================
   * Template Name: iPortfolio

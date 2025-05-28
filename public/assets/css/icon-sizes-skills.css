@@ -1,0 +1,19 @@
+.html, .react, .react-native, .css, .maui, .c-sharp, .php, .nextjs {
+    width: 75%;
+}
+
+.javascript, .laravel, .unity {
+    width: 60%;
+}
+
+.unity {
+    margin-left: -0.4rem;
+}
+
+.sql {
+    width: 70%;
+}
+
+.typescript {
+    width: 55%;
+}
