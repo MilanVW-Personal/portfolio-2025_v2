@@ -10,8 +10,8 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      {{-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> --}}
       <a href="https://www.linkedin.com/in/milan-vw-0b7a34277/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       <a href="https://github.com/MilanVW1" class="github"><i class="bi bi-github"></i></a>
     </div>
