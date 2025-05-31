@@ -18,12 +18,12 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> Over Mij</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> CV</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projecten</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Skills</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="/#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="/#about"><i class="bi bi-person navicon"></i> Over Mij</a></li>
+        <li><a href="/#resume"><i class="bi bi-file-earmark-text navicon"></i> CV</a></li>
+        <li><a href="/#portfolio"><i class="bi bi-images navicon"></i> Projecten</a></li>
+        <li><a href="/#learned_skills"><i class="bi bi-hdd-stack navicon"></i> Skills</a></li>
+        <li><a href="/#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
 </header>
