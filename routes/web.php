@@ -50,6 +50,14 @@ Route::get("/over-mij", function () {
     return view("over-mij");
 });
 
+Route::get("/privacy", function() {
+    return view ("privacypolicy");
+});
+
+Route::get("/cookies", function() {
+    return view ("cookiepolicy");
+});
+
 
 
 Route::post("/createNewProject", [ProjectController::class, "createNewProject"]);
