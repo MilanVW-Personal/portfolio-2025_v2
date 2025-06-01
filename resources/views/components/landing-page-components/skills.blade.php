@@ -3,7 +3,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Skills & Hobby's</h2>
-        <p>Bekijk wat mijn hobby's zijn en welke soft-skills ik al onder de knie heb.</p>
+        <p>Bekijk wat mijn hobby's & interesses zijn en welke soft-skills ik bezit.</p>
         </div><!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">

@@ -38,7 +38,7 @@
             </div>
 
             <div class="col-lg-7">
-                <form action="{{url("assets/scripts/verstuur_email.php")}}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <form action="{{url("assets/scripts/email-script.php")}}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                     <div class="row gy-4">
                         <div class="col-md-6">
                             <label for="name-field" class="pb-2">Naam</label>
