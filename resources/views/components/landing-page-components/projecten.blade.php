@@ -52,7 +52,9 @@
                             <h4>{{$pr->projectName}}</h4>
                             <p class="px-2">{{ $pr->shortDesc }}</p>
                             <a href="{{url($pr->thumbnailImage)}}" title="{{ $pr->projectName }}" data-gallery="portfolio-gallery-website" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                            <a href="{{$link}}" title="Bekijk dit project live" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            @if($link)
+                                <a href="{{$link}}" title="Bekijk dit project live" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                            @endif
                         </div>
                         </div>
                     </div>

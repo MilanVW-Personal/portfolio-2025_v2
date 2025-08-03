@@ -9,9 +9,9 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Over Mij</h2>
-        <p> Hallo! Mijn naam is Milan Van Winkel, student aan de Thomas More Hogeschool (Campus Lier). Dit is mijn persoonlijke website waarop ik mijn professionele en persoonlijke ontwikkeling toon.<br><br>
+        <p> Hallo! Mijn naam is Milan Van Winkel en ik ben eind juni 2025 aan de Thomas More Hogeschool (Campus Lier) afgestudeerd in de graduaatsopleiding programmeren, waarbij ik geslaagd was met onderscheiding. Dit is mijn persoonlijke website waarop ik mijn professionele en persoonlijke ontwikkeling toon.<br><br>
             Je vindt hier uitgebreide informatie over mijn vaardigheden, CV, ervaringen binnen schoolprojecten, stages en werk. Ik noem ook op wat mijn hobby's & interesses zijn, samen met welke soft-skills ik al bezit. Elk onderdeel is zorgvuldig opgebouwd om een volledig beeld te geven van wie ik ben – als persoon én als toekomstig professional.<br><br>
-            Gebruik de navigatiebalk bovenaan om eenvoudig door mijn portfolio te bladeren. Heb je vragen of wil je contact opnemen? Dat kan via de contactpagina of de knop hieronder. Bedankt voor je bezoek!</p>
+            Gebruik de navigatiebalk hiernaast om eenvoudig door mijn portfolio te bladeren. Heb je vragen of wil je contact opnemen? Dat kan via het contactformulier onderaan de pagina of via één van de andere contactmogelijkheden. Bedankt voor je bezoek!</p>
         </div><!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -37,7 +37,7 @@
                 <div class="col-lg-6">
                 <ul>
                     <li><i class="bi bi-chevron-right"></i> <strong>Leeftijd:</strong> <span>{{$dynamischeLeeftijd}}</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Diploma:</strong> <span>Graduaat</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Diploma:</strong> <span>Graduaat in het programmeren</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>r0985432@student.thomasmore.be</span></li>
                 </ul>
                 </div>
