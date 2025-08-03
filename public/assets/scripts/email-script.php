@@ -22,7 +22,7 @@
         }
 
         // Recipient (replace with your own email address)
-        $to = "r0985432@student.thomasmore.be";
+        $to = "milna.van.winkel@gmail.com";
 
         // Email content
         $email_content = "Naam: $name\n";

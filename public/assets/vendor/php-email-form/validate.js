@@ -64,7 +64,8 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      if (data.trim() == 'OK' || data.includes("succesvol verzonden")) {
+        // thisForm.querySelector('.sent-message').innerHTML = data
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
@@ -72,6 +73,7 @@
       }
     })
     .catch((error) => {
+      // mogelijks later betere error-message laten tonen.
       displayError(thisForm, error);
     });
   }
