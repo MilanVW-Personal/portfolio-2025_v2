@@ -1,7 +1,7 @@
 <section id="learned_skills" class="services section">
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-        <h2>Aangeleerde skills</h2>
+        <h2>Technische vaardigheden</h2>
         <p>Hier zie je alle aangeleerde hard-skills die ik gedurende de opleiding heb meegekregen, en daarbuiten.</p>
     </div><!-- End Section Title -->
 

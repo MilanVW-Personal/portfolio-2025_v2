@@ -39,6 +39,7 @@
                     <li><i class="bi bi-chevron-right"></i> <strong>Leeftijd:</strong> <span>{{$dynamischeLeeftijd}}</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Diploma:</strong> <span>Graduaat in het programmeren</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>r0985432@student.thomasmore.be</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Rijbewijs B:</strong> <span>momenteel niet in bezit</span></li>
                 </ul>
                 </div>
             </div>

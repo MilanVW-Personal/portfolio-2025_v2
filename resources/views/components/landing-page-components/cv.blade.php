@@ -75,18 +75,19 @@
                 <h3 class="resume-title">Samengevat</h3>
                 <div class="resume-item pb-0">
                     <h4>Milan Van Winkel</h4>
-                    <p><em>Een beginnende, gedreven, developer/ programmeur die kennis heeft van meerdere programmeertalen die deadlines in de gaten houdt, en zich hieraan aanpast indien nodig en het gewenste eindproduct  wil afleveren.</em></p>
+                    <p><em>Resultaatgerichte junior programmeur met een graduaatsdiploma Programmeren en ervaring met onder andere C#, PHP, Laravel en JavaScript-frameworks zoals React en Next.js. Enthousiast om complexe problemen om te zetten in gebruiksvriendelijke oplossingen. Ervaring opgedaan tijdens stage en diverse groepsprojecten, waarbij samenwerking, communicatie en kwaliteit centraal stonden. Leergierig, nauwkeurig en altijd op zoek naar manieren om mezelf te verbeteren.</em></p>
                     <ul class="pt-[15px] list-disc">
                         <li>Berlaar, Antwerpen, België</li>
                         <li>0471 01 31 47</li>
                         <li>r0985432@student.thomasmore.be</li>
+                        <li>Rijbewijs B momenteel niet in bezit</li>
                     </ul>
                 </div>  
 
                 <h3 class="resume-title">Opleidingen</h3>
                 <div class="resume-item">
                     <h4>Graduaat Programmeren</h4>
-                    <h5>2023 - 2025</h5>
+                    <h5>September 2023 - Juni 2025</h5>
                     <p>
                     <em>
                         @php
@@ -104,7 +105,7 @@
 
                 <div class="resume-item">
                     <h4>Sociale Technische Wetenschappen</h4>
-                    <h5>2017 - 2023</h5>
+                    <h5>September 2017 - Juni 2023</h5>
                     <p>
                         <em>
                             @php
