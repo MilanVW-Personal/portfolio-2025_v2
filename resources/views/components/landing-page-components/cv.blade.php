@@ -79,7 +79,7 @@
                     <ul class="pt-[15px] list-disc">
                         <li>Berlaar, Antwerpen, België</li>
                         <li>0471 01 31 47</li>
-                        <li>r0985432@student.thomasmore.be</li>
+                        <li>vanwinkelmilan@gmail.com</li>
                         <li>Rijbewijs B momenteel niet in bezit</li>
                     </ul>
                 </div>  
