@@ -29,7 +29,7 @@
                     <i class="bi bi-envelope flex-shrink-0"></i>
                     <div>
                         <h3>E-mailadres</h3>
-                        <p>r0985432@student.thomasmore.be</p>
+                        <p>vanwinkelmilan@gmail.com</p>
                     </div>
                     </div>  
 
