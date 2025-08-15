@@ -1,6 +1,10 @@
 .dashboard {
-    margin-top: 10%;
-    margin-inline: auto;
+    margin-block: 7%;
+    margin-inline: 2.5%;
+}
+
+.table-wrapper {
+    overflow-x: auto;
 }
 
 thead {

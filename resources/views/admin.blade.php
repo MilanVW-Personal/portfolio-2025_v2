@@ -2,8 +2,8 @@
 <link href="{{ url("assets/css/dashboard.css") }}" rel="stylesheet"/>
 
 <div class="dashboard">
-<div>
-    <h3 class="font-semibold pl-auto">Projecten</h3>
+<div class="table-wrapper">
+    <h3 class="font-semibold">Projecten</h3>
     <table>
         <thead>
             <tr>
@@ -65,8 +65,8 @@
     </table>
 </div>
 
-<div class="my-[45px]">
-    <h3 class="font-semibold pl-auto">Opleidingen (CV)</h3>
+<div class="my-[55px] table-wrapper">
+    <h3 class="font-semibold">Opleidingen (CV)</h3>
     <table>
         <thead>
             <tr>
@@ -123,8 +123,8 @@
     </table>
 </div>
 
-<div>
-    <h3 class="font-semibold pl-auto">Ervaringen (CV)</h3>
+<div class="table-wrapper">
+    <h3 class="font-semibold">Ervaringen (CV)</h3>
     <table>
         <thead>
             <tr>
