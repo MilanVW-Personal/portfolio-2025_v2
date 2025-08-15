@@ -1,6 +1,17 @@
 @include("partials/header")
 <link href="{{ url("assets/css/dashboard.css") }}" rel="stylesheet"/>
+ <form action="" method="post" class="code-form">
+    <div class="row gy-4">
+        <div class="col-md-6">
+            <label for="code-field" class="pb-2">Voer toegangscode in</label>
+            <input type="number" name="name" id="code-field" class="form-control" required="">
+        </div>
 
+        <div class="col-md-12 col-lg-12">
+            <button type="submit" class="w-[110px]">Submit</button>
+        </div>
+    </div>
+</form>
 <div class="dashboard">
 <div class="table-wrapper">
     <h3 class="font-semibold">Projecten</h3>
@@ -189,5 +200,25 @@
 <form method="post" id="editForm">
     @method("PUT")
 </form>
+
+<script>
+    const logInForm = document.querySelector(".php-email-form")
+    const dashboard = document.querySelector(".dashboard")
+    const ingevoerdeCode = document.querySelector("#code-field")
+    const code = 78521643
+
+    logInForm.addEventListener('submit', (e) => {
+        e.preventDefault(); // Voorkom de standaard formulierinzending
+
+        if (parseInt(ingevoerdeCode.value) === code) {
+            // De ingevoerde code is correct
+            dashboard.style.display = 'block'; // Of 'block'
+            logInForm.style.display = 'none';
+        } else {
+            // De code is onjuist
+            alert('Onjuiste toegangscode. Probeer het opnieuw.');
+        }
+    });
+</script>
 
 
