@@ -35,7 +35,7 @@
           <p>Heb je vragen over mijn cookiebeleid? Neem gerust contact met mij op:</p>
           <ul class="pt-[15px] list-disc">
             <li>Milan Van Winkel</li>
-            <li>r0985432@student.thomasmore.be</li>
+            <li>vanwinkelmilan@gmail.com</li>
           </ul>
         </div>
       </div>

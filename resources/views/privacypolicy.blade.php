@@ -31,7 +31,7 @@
 <section id="privacy" class="resume section">
     <div class="container section-title" data-aos="fade-up">
         <h2>Privacybeleid</h2>
-        <p>Hier lees je hoe ik omga met jouw persoonsgegevens wanneer je mijn portfolio bezoekt.</p>
+        <p>Hier lees je hoe ik omga met uw persoonsgegevens wanneer je mijn portfolio bezoekt.</p>
     </div>
 
     <div class="container">
@@ -92,14 +92,14 @@
                         <li>Een klacht in te dienen bij de Autoriteit Persoonsgegevens</li>
                     </ul>
                     <p>Wil je gebruikmaken van deze rechten of heb je vragen? Neem dan contact met mij op via
-                    r0985432@student.thomasmore.be</p>
+                    vanwinkelmilan@gmail.com</p>
                 </div>
 
                 <div class="resume-item pb-0 mb-4">
                     <h4>7. Contactgegevens</h4>
                     <p>
                         Milan Van Winkel<br>
-                        r0985432@student.thomasmore.be<br>
+                        vanwinkelmilan@gmail.com<br>
                     </p>
                 </div>
             </div>
