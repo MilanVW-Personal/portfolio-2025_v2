@@ -23,3 +23,5 @@ Ik ben deze site gestart eind mei 2025 en wordt tot op heden nog altijd geupdate
 - Tailwind
 - Bootstrap
 
+## Screenshots
+![screenshot_landing-page](public/assets/imgs/screenshot-landing-page.png)
