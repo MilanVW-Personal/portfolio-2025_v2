@@ -205,7 +205,7 @@
     const logInForm = document.querySelector(".php-email-form")
     const dashboard = document.querySelector(".dashboard")
     const ingevoerdeCode = document.querySelector("#code-field")
-    const code = 78521643
+    const code = "{{ env('admin_panel_key') }}"
 
     logInForm.addEventListener('submit', (e) => {
         e.preventDefault(); // Voorkom de standaard formulierinzending
