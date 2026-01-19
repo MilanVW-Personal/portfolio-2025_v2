@@ -8,6 +8,7 @@ use App\Models\Education;
 use App\Models\Project;
 use App\Models\LearnedSkill as LearnedSkill;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     $experiences = Ervaring::all()->sortByDesc("start");
@@ -40,6 +41,17 @@ Route::get('/admin', function() {
         "projecten" => $projects,
         "ervaringen" => $ervaringen,
     ]);
+});
+
+// Route om ingevulde code te kunnen checken
+Route::post("/admin/login", function(Request $request) { 
+    $ingevuldeCode = $request->input("code");
+    $envCode = env('admin_panel_key');
+    if ($ingevuldeCode == $envCode) {
+        session(["admin_ingelogd" => true]);
+        return back();
+    }
+    return back()->with("Error", "De toegangscode die je invulde was niet juist! Probeer het opnieuw");
 });
 
 Route::get("/contact", action: function() {
