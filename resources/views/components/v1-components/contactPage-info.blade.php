@@ -40,7 +40,6 @@
     let emailLink = document.querySelector("p.contact-mail")
     let phoneLink = document.querySelector("p.contact-phone")
 
-    // console.log(emailLink, phoneLink)
     phoneLink.addEventListener("click", () => {
         window.location.href = "tel:+32 471 01 31 47";
     })
