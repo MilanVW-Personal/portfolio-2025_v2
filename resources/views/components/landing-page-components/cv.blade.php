@@ -26,7 +26,7 @@
                 echo "Oktober".' '.$startDate->format("Y");
                 break;
             default:
-                # code...
+                echo $startDate->format("F").' '.$startDate->format("Y");
                 break;
         }
 
@@ -58,7 +58,7 @@
                 echo "Oktober".' '.$endDate->format("Y");
                 break;
             default:
-                # code...
+                echo $endDate->format("F").' '.$endDate->format("Y");
                 break;
         }
     }
