@@ -1,66 +1,33 @@
 @php
+    $fullTimePeriod = "";
     function changeDateLanguage($month_of_startDate, $month_of_endDate, $startDate, $endDate) {
-        switch ($month_of_startDate) {
-            case 'January':
-                echo "Januari".' '.$startDate->format("Y");
-                break;
-            case 'February':
-                echo "Februari".' '.$startDate->format("Y");
-                break;
-            case 'March':
-                echo "Maart".' '.$startDate->format("Y");
-                break;
-            case 'May':
-                echo "Mei".' '.$startDate->format("Y");
-                break;
-            case 'June':
-                echo "Juni".' '.$startDate->format("Y");
-                break;
-            case 'July':
-                echo "Juli".' '.$startDate->format("Y");
-                break;
-            case 'August':
-                echo "Augustus".' '.$startDate->format("Y");
-                break;
-            case 'October':
-                echo "Oktober".' '.$startDate->format("Y");
-                break;
-            default:
-                echo $startDate->format("F").' '.$startDate->format("Y");
-                break;
-        }
 
-        echo " - ";
+        $startDateMonthAndYear = match($month_of_startDate) {
+            "January" => "Januari".' '.$startDate->format("Y"),
+            "February" => "Februari".' '.$startDate->format("Y"),
+            "March" => "Maart".' '.$startDate->format("Y"),
+            "May" => "Mei".' '.$startDate->format("Y"),
+            "June" => "Juni".' '.$startDate->format("Y"),
+            "July" => "Juli".' '.$startDate->format("Y"),
+            "August" => "Augustus".' '.$startDate->format("Y"),
+            "October" => "Oktober".' '.$startDate->format("Y"),
+            default => $startDate->format("F").' '.$startDate->format("Y"),
+        };
 
-        switch ($month_of_endDate) {
-            case 'January':
-                echo "Januari".' '.$endDate->format("Y");
-                break;
-            case 'February':
-                echo "Februari".' '.$endDate->format("Y");
-                break;
-            case 'March':
-                echo "Maart".' '.$endDate->format("Y");
-                break;
-            case 'May':
-                echo "Mei".' '.$endDate->format("Y");
-                break;
-            case 'June':
-                echo "Juni".' '.$endDate->format("Y");
-                break;
-            case 'July':
-                echo "Juli".' '.$endDate->format("Y");
-                break;
-            case 'August':
-                echo "Augustus".' '.$endDate->format("Y");
-                break;
-            case 'October':
-                echo "Oktober".' '.$endDate->format("Y");
-                break;
-            default:
-                echo $endDate->format("F").' '.$endDate->format("Y");
-                break;
-        }
+        $endDateMonthAndYear = match($month_of_endDate) {
+            "January" => "Januari".' '.$endDate->format("Y"),
+            "February" => "Februari".' '.$endDate->format("Y"),
+            "March" => "Maart".' '.$endDate->format("Y"),
+            "May" => "Mei".' '.$endDate->format("Y"),
+            "June" => "Juni".' '.$endDate->format("Y"),
+            "July" => "Juli".' '.$endDate->format("Y"),
+            "August" => "Augustus".' '.$endDate->format("Y"),
+            "October" => "Oktober".' '.$endDate->format("Y"),
+            default => $endDate->format("F").' '.$endDate->format("Y"),
+        };
+        
+        $fullTimePeriod = $startDateMonthAndYear.' - '.$endDateMonthAndYear;
+        echo $fullTimePeriod;
     }
 @endphp
 
