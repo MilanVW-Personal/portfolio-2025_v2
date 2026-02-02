@@ -26,3 +26,6 @@ Ik ben deze site gestart eind mei 2025 en wordt tot op heden nog altijd geüpdat
 ## Screenshots
 Hieronder staat een screenshot van de landing page van het portfolio.
 ![screenshot_landing-page](public/assets/imgs/screenshot-landing-page.png)
+
+## English version
+To those who are English speaking, you can read the translated version of this README by selecting the `README_EN.md` file.
