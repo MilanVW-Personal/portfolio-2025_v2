@@ -1,6 +1,6 @@
 # Portfolio
 ## Korte uitleg
-Deze repository bevat alle files voor mijn portfolio website die je via [deze link](https://www.milanvanwinkel.be) kunt bereiken. Op deze website kun je allerlei informatie over mij terugvinden, waaronder studies, ervaringen, skills... In deze README wil ik graag een duidelijker beeld geven over hoe het project precies in elkaar zit en welke technologieën ik zo al gebruik.
+Deze repository bevat alle files en source-code voor mijn portfolio website die je via [deze link](https://www.milanvanwinkel.be) kunt bereiken. Op deze website kun je allerlei informatie over mij terugvinden, waaronder studies, ervaringen, skills... In deze README wil ik graag een duidelijker beeld geven over hoe het project precies in elkaar zit en welke technologieën ik zo al gebruik.
 
 ## Wat is dit project?
 Dit project is mijn eigen portfolio website, die ik destijds heb ontwikkeld voor mijn jurymoment in juni 2025. Dit portfolio is gemaakt via het Laravel-framework, waar ik de HTML-code op deel in verschillende "views" met behulp van PHP en Blade. Op mijn portfolio worden de projecten, opleidingen, (werk)ervaringen en aangeleerde skills dynamisch opgehaald vanuit een MySQL database die met de site verbonden is. Op deze manier bespaar ik code en behoud ik tegelijkertijd ook de leesbaarheid van de code.
