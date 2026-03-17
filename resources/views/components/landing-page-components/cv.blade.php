@@ -47,7 +47,7 @@
                         <li>Berlaar, Antwerpen, België</li>
                         <li>0471 01 31 47</li>
                         <li>vanwinkelmilan@gmail.com</li>
-                        <li>Rijbewijs B momenteel niet in bezit</li>
+                        <li>Rijbewijs B: voorlopig rijbewijs in bezit</li>
                     </ul>
                 </div>  
 
