@@ -42,10 +42,13 @@
                 <h3 class="resume-title">Samengevat</h3>
                 <div class="resume-item pb-0">
                     <h4>Milan Van Winkel</h4>
-                    <p><em>Resultaatgerichte junior programmeur met een graduaatsdiploma Programmeren en ervaring met onder andere C#, PHP, Laravel en JavaScript-frameworks zoals React en Next.js. Enthousiast om complexe problemen om te zetten in gebruiksvriendelijke oplossingen. Ervaring opgedaan tijdens stage en diverse groepsprojecten, waarbij samenwerking, communicatie en kwaliteit centraal stonden. Leergierig, nauwkeurig en altijd op zoek naar manieren om mezelf te verbeteren.</em></p>
+                    <div class="space-y-5">
+                        <p><em>Resultaatgerichte junior programmeur met een graduaatsdiploma Programmeren en ervaring met onder andere C#, PHP, Laravel en JavaScript-frameworks zoals React en Next.js. Enthousiast om complexe problemen om te zetten in gebruiksvriendelijke oplossingen. Ervaring opgedaan tijdens stage en diverse groepsprojecten, waarbij samenwerking, communicatie en kwaliteit centraal stonden. Leergierig, nauwkeurig en altijd op zoek naar manieren om mezelf te verbeteren.</em></p>
+                        <p><em>Buiten het programmeren ben ik ook een resultaatgerichte IT-professional met een sterk analytisch vermogen. Dankzij mijn eerder vermelde ervaringen, beschik ik over sterke communicatieve vaardigheden en een klantgerichte instelling. Leergierige teamplayer die kritisch meedenkt en altijd streeft naar een optimale customer experience door middel van innovatie en technisch inzicht.</em></p>
+                    </div>
                     <ul class="pt-[15px] list-disc">
                         <li>Berlaar, Antwerpen, België</li>
-                        <li>0471 01 31 47</li>
+                        <li>+32 (0) 471 01 31 47</li>
                         <li>vanwinkelmilan@gmail.com</li>
                         <li>Rijbewijs B: voorlopig rijbewijs in bezit</li>
                     </ul>
