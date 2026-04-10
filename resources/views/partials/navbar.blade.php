@@ -2,7 +2,7 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="{{ url("assets/imgs/me.jpeg") }}" alt="" class="img-fluid rounded-circle">
+      <img src="{{ url("assets/imgs/me_updated.jpg") }}" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="/" class="logo d-flex align-items-center justify-content-center">
