@@ -40,5 +40,6 @@
     <!-- Main JS File -->
     <script src="{{ url("assets/js/main.js") }}"></script>
     <script src="{{ url("assets/js/hide-cookiebanner.js") }}"></script>
+    <script src="{{ url("assets/js/modal.js") }}"></script>
   </body>
 </html>

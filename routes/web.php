@@ -76,4 +76,10 @@ Route::post("/createNewProject", [ProjectController::class, "createNewProject"])
 Route::post("/createNewErvaring", [ErvaringController::class, "createNewErvaring"]);
 Route::post("/createNewEducation", [EducationController::class, "createNewEducation"]);
 
+Route::put('/editProject/{project}', [ProjectController::class, "editProject"]);
+Route::put('/editErvaring/{ervaring}', [ErvaringController::class, "editErvaring"]);
+Route::put('/editEducation/{education}', [EducationController::class, "editEducation"]);
+
+Route::delete('/deleteErvaring/{ervaring}', [ErvaringController::class, "deleteErvaring"]);
+Route::delete('/deleteEducation/{education}', [EducationController::class, "deleteEducation"]);
 Route::delete('/deleteProject/{project}', [ProjectController::class, "deleteProject"]);

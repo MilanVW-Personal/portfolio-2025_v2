@@ -3,6 +3,6 @@
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Milan Van Winkel</h2>
-        <p>Ik ben een <span class="typed" data-typed-items="Developer,Gamer,Student,Programmeur"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>Ik ben een <span class="typed" data-typed-items="Developer,Gamer,IT-professional,Programmeur"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
     </div>
 </section><!-- /Hero Section -->

@@ -36,4 +36,26 @@ class EducationController extends Controller
         $opleiding->delete();
         return redirect()->back()->with("success", "Opleiding verwijderd!");
     }
+
+    public function editEducation(Request $request, Education $education) {
+        $editedOpleidingData = $request->validate([
+            "editedOpleidingStart" => "required|date_format:Y-m-d\TH:i",
+            "editedOpleidingEnd" => "required|date_format:Y-m-d\TH:i",
+            "editedOpleidingDesc" => "required|min:1|max:2000",
+            "editedOpleidingCampus" => "required|min:1|max:2000",
+            "editedOpleidingLocation" => "nullable",
+        ]);
+
+        $education->update([
+            "start" => $editedOpleidingData["editedOpleidingStart"],
+            "end" => $editedOpleidingData["editedOpleidingEnd"],
+            "campus" => $editedOpleidingData["editedOpleidingCampus"],
+            "location" => $editedOpleidingData["editedOpleidingLocation"] == "" ? null : $editedOpleidingData["editedOpleidingLocation"],
+            "opleidingDesc" => $editedOpleidingData["editedOpleidingDesc"],
+        ]);
+
+        $education->save();
+
+        return redirect()->back()->with("success", "Opleiding aangepast!");
+    }
 }

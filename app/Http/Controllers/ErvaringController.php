@@ -16,6 +16,7 @@ class ErvaringController extends Controller
             "newErvaringStart" => "required|date_format:Y-m-d\TH:i",
             "newErvaringEnd" => "required|date_format:Y-m-d\TH:i",
             "newErvaringAdres" => "nullable",
+            "newErvaringLocatie" => "nullable",
         ]);
 
         // dd($newProjectData);
@@ -25,7 +26,8 @@ class ErvaringController extends Controller
             "end" => $newErvaringData["newErvaringEnd"],
             "ervaringNaam" => $newErvaringData["newErvaringNaam"],
             "ervaringDesc" => $newErvaringData["newErvaringDesc"],
-            "ervaringAdresGoogleMaps" => $newErvaringData["newErvaringAdres"] == "" ? null : $newErvaringData["newErvaringAdres"]
+            "ervaringAdresGoogleMaps" => $newErvaringData["newErvaringAdres"] == "" ? null : $newErvaringData["newErvaringAdres"],
+            "locatie" => $newErvaringData["newErvaringLocatie"] == "" ? null : $newErvaringData["newErvaringLocatie"],
         ]);
 
         return redirect()->back()->with("success", "Ervaring toegevoegd!");
@@ -36,4 +38,29 @@ class ErvaringController extends Controller
         $ervaring->delete();
         return redirect()->back()->with("success", "Ervaring verwijderd!");
     }
+
+    public function editErvaring(Request $request, Ervaring $ervaring) {
+        $editedErvaringData = $request->validate([
+            "editedErvaringNaam" => "required|min:1|max:100",
+            "editedErvaringDesc" => "required|min:1|max:2000",
+            "editedErvaringStart" => "required|date_format:Y-m-d\TH:i",
+            "editedErvaringEnd" => "required|date_format:Y-m-d\TH:i",
+            "editedErvaringAdres" => "nullable",
+            "editedErvaringLocatie" => "nullable",
+        ]);
+
+        $ervaring->update([
+            "start" => $editedErvaringData["editedErvaringStart"],
+            "end" => $editedErvaringData["editedErvaringEnd"],
+            "ervaringNaam" => $editedErvaringData["editedErvaringNaam"],
+            "ervaringDesc" => $editedErvaringData["editedErvaringDesc"],
+            "ervaringAdresGoogleMaps" => $editedErvaringData["editedErvaringAdres"] == "" ? null : $editedErvaringData["editedErvaringAdres"],
+            "locatie" => $editedErvaringData["editedErvaringLocatie"] == "" ? null : $editedErvaringData["editedErvaringLocatie"],
+        ]);
+
+        $ervaring->save();
+
+        return redirect()->back()->with("success", "Ervaring aangepast!");
+    }
+
 }

@@ -54,4 +54,32 @@ class ProjectController extends Controller
         $project->delete();
         return redirect()->back()->with("success", "Project verwijderd!");
     }
+
+    public function editProject(Request $request, Project $project) {
+        $editedProjectData = $request->validate([
+            "editedProjectName" => "required|min:1|max:100",
+            "editedProjectStart" => "required|date_format:Y-m-d\TH:i",
+            "editedProjectEnd" => "required|date_format:Y-m-d\TH:i",
+            "editedProjectDesc" => "required|min:1|max:500",
+            "editedProjectThumbnailImage" => "image|mimes:jpg,png,jpeg,webp",
+            "editedProjectLink" => "nullable"
+        ]);
+
+        if (isset($editedProjectData["editedProjectThumbnailImage"])) {
+            unlink($project->thumbnailImage);
+            $project->thumbnailImage = $this->saveImageToFolder($editedProjectData["editedProjectThumbnailImage"]);
+        }
+
+        Project::update([
+            "projectName" => $editedProjectData["editedProjectName"],
+            "start" =>  $editedProjectData["editedProjectStart"],
+            "end" => $editedProjectData["editedProjectEnd"],
+            "shortDesc" => $editedProjectData["editedProjectDesc"],
+            "link" => $editedProjectData["editedProjectLink"] == null ? "/" : $editedProjectData["editedProjectLink"],
+        ]);
+
+        $project->save();
+
+        return redirect()->back()->with("success", "Project aangepast!");
+    }
 }
