@@ -21,7 +21,7 @@
                 <img src="{{url("assets/imgs/me-about.jpg")}}" class="img-fluid" alt="foto_van_mezelf">
             </div>
             <div class="col-lg-8 content">
-            <h2>Developer</h2>
+            <h2>Developer | IT-professional | Customer Experience Driven</h2>
             <p class="fst-italic py-3">
                 Ik heb een grote interesse voor alles wat met computers te maken heeft. Of het nu gaat om een applicatie, systeem of website, anderen blij kunnen maken met mijn skills en vaardigheden is mijn doel!
             </p>

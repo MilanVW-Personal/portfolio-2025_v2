@@ -43,8 +43,8 @@
                 <div class="resume-item pb-0">
                     <h4>Milan Van Winkel</h4>
                     <div class="space-y-5">
-                        <p><em>Resultaatgerichte junior programmeur met een graduaatsdiploma Programmeren en ervaring met onder andere C#, PHP, Laravel en JavaScript-frameworks zoals React en Next.js. Enthousiast om complexe problemen om te zetten in gebruiksvriendelijke oplossingen. Ervaring opgedaan tijdens stage en diverse groepsprojecten, waarbij samenwerking, communicatie en kwaliteit centraal stonden. Leergierig, nauwkeurig en altijd op zoek naar manieren om mezelf te verbeteren.</em></p>
-                        <p><em>Buiten het programmeren ben ik ook een resultaatgerichte IT-professional met een sterk analytisch vermogen. Dankzij mijn eerder vermelde ervaringen, beschik ik over sterke communicatieve vaardigheden en een klantgerichte instelling. Leergierige teamplayer die kritisch meedenkt en altijd streeft naar een optimale customer experience door middel van innovatie en technisch inzicht.</em></p>
+                        <p><em>Ik ben een resultaatgerichte junior programmeur en analytische IT-professional met een graduaatsdiploma Programmeren (met onderscheiding). Ik combineer technische expertise in C#, PHP (Laravel) en JavaScript-frameworks zoals React en Next.js met een sterke klantgerichte instelling.</em></p>
+                        <p><em>Tijdens mijn stage bij Spot Group en diverse projecten ontwikkelde ik een scherp oog voor detail en de vaardigheid om complexe problemen om te zetten in gebruiksvriendelijke oplossingen. Als leergierige teamplayer denk ik kritisch mee en streef ik via technische innovatie en gestructureerd werk (Agile/Scrum) altijd naar een optimale customer experience.</em></p>
                     </div>
                     <ul class="pt-[15px] list-disc">
                         <li>Berlaar, Antwerpen, België</li>
