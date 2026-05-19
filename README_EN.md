@@ -44,17 +44,22 @@ All content (projects, education, work experience, and skills) is dynamically lo
 Follow these steps to run the project locally:
 
 ```bash
+# Clone project locally
 git clone https://github.com/MilanVW-Personal/portfolio-2025_v2.git
 cd portfolio-2025_v2
 
+# Install dependencies
 composer install
 npm install
 
+# Environment setup
 cp .env.example .env
 php artisan key:generate
 
+# Database
 php artisan migrate --seed
 
+# Run project
 npm run dev
 php artisan serve
 ```
