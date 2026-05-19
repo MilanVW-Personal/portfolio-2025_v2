@@ -1,28 +1,73 @@
 # Portfolio
-## Short explanation
-This repository contains all the files and source code for my portfolio website, which you can access via [this link](https://www.milanvanwinkel.be). On this website, you can find all sorts of information about me, including my studies, experience, and skills. In this README, I'd like to give you a clearer picture of how the project works and what technologies I use.
+## 📌 About the project
+This repository contains the complete source code of my [portfolio website](https://www.milanvanwinkel.be), in which I present my studies, experience, projects, and skills.
 
-## What is this project?
-This project is my own portfolio website, which I developed for my jury moment back in June 2025. This portfolio was created using the Laravel framework, where I divided the HTML code into different views using PHP and Blade. The projects, education, (work) experiences, and acquired skills are dynamically retrieved from a MySQL database connected to the site. This way, I minimize code while maintaining its readability.
+This project is actively maintained and continuously updated as my skills and experience grow.
 
-## Why did I make this project?
-I had created a portfolio website before, right at the beginning of my studies, but it was built solely using HTML, CSS, and Bootstrap. After completing my internship (workplace learning) in May 2025, I had to create a professional website for the graduation jury in June 2025, where I had to showcase my experiences and projects. I initially started from scratch, but after a few days, I decided to utilize and customize a template I found online. In retrospect, I'm glad I made this choice, as it made a good impression on the judges during my graduation jury.
+## 🎯 Goal of the project
+This portfolio was developed as a final project for my jury presentation in June 2025. The goal was to build a professional and dynamic website where I can showcase my technical skills, projects, and experiences.
 
-## When did I start this project?
-I started this site/ project at the end of May 2025 and it is still getting updated to this day.
+## 🧠 Motivation
+I had previously built a portfolio website in the early stages of my studies, but it was built entirely statically using HTML, CSS, and Bootstrap.
 
-## Used technologies
-- Laravel
+After completing my internship in May 2025, I decided to build a more advanced and professional solution for my jury presentation. I started from scratch, but after a few days, I chose to work with an existing template as a base.
+
+In hindsight, this was a good choice, as the final result was positively received by the jury members.
+
+## 🕒 When did I start this project?
+This project started in late May 2025 and is still being further updated and improved to this day.
+
+## 🛠️ Technologies
+- Laravel (PHP framework)
 - PHP
-- Blade
+- Blade templating engine
 - MySQL (Eloquent ORM)
 - CSS
-- Javascript
+- JavaScript
 - Composer
 - HTML
-- Tailwind
+- Tailwind CSS
 - Bootstrap
+- Node.js & npm
 
-## Screenshots
+## 📁 Project architecture
+The website is built according to the Laravel MVC pattern:
+
+- **Models**: retrieve data from the linked MySQL database via Eloquent ORM
+- **Views**: built using Blade templates
+- **Controllers**: handle the logic and various actions regarding data processing
+
+All content (projects, education, work experience, and skills) is dynamically loaded from the database.
+
+## ⚙️ Installation & setup
+
+Follow these steps to run the project locally:
+
+```bash
+git clone https://github.com/MilanVW-Personal/portfolio-2025_v2.git
+cd portfolio-2025_v2
+
+composer install
+npm install
+
+cp .env.example .env
+php artisan key:generate
+
+php artisan migrate --seed
+
+npm run dev
+php artisan serve
+```
+### Requirements
+- PHP 8+
+- Composer
+- Node.js & npm
+- MySQL
+
+## 🔮 Future changes & improvements
+- Add multilingualism to the website
+- Detail pages per project
+
+## 📸 Screenshots
 Below is a screenshot of the portfolio landing page.
 ![screenshot_landing-page](public/assets/imgs/screenshot-landing-page.png)
