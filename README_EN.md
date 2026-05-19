@@ -74,5 +74,5 @@ php artisan serve
 - Detail pages per project
 
 ## 📸 Screenshots
-Below is a screenshot of the portfolio landing page.
+Below is a screenshot of the portfolio landing page (in Dutch).
 ![screenshot_landing-page](public/assets/imgs/screenshot-landing-page.png)
