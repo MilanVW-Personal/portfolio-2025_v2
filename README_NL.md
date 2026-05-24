@@ -78,6 +78,6 @@ php artisan serve
 Hieronder staat een screenshot van de landing page van het portfolio.
 ![screenshot_landing-page](public/assets/imgs/screenshot-landing-page.png)
 
-## 🌐 Languages
-- Dutch (current)
-- English: [`README.md`](README.md)
+## 🌐 Talen
+- Nederlands (huidige)
+- Engels: [`README.md`](README.md)
