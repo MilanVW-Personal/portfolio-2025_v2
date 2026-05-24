@@ -1,24 +1,23 @@
 # Portfolio
-## 📌 Over dit project
-Deze repository bevat de volledige source code van mijn [portfolio website](https://www.milanvanwinkel.be), waarin ik mijn studies, ervaring, projecten en vaardigheden presenteer.
+## 📌 About the project
+This repository contains the complete source code of my [portfolio website](https://www.milanvanwinkel.be), in which I present my studies, experience, projects, and skills.
 
-Dit project wordt actief onderhouden en voortdurend aangepast naarmate mijn vaardigheden en ervaring groeien.
+This project is actively maintained and continuously updated as my skills and experience grow.
 
-## 🎯 Doel van het project
-Dit portfolio is ontwikkeld als eindproject voor mijn jurymoment in juni 2025. Het doel was om een professionele en dynamische website te bouwen waarop ik mijn technische vaardigheden, projecten en ervaringen kan presenteren.
+## 🎯 Goal of the project
+This portfolio was developed as a final project for my jury presentation in June 2025. The goal was to build a professional and dynamic website where I can showcase my technical skills, projects, and experiences.
 
-## 🧠 Motivatie
-Ik had in het verleden al een portfolio website gebouwd in de beginfase van mijn opleiding, maar deze was volledig statisch opgebouwd met HTML, CSS en Bootstrap.
+## 🧠 Motivation
+I had previously built a portfolio website in the early stages of my studies, but it was built entirely statically using HTML, CSS, and Bootstrap.
 
-Na het afronden van mijn werkplekleren in mei 2025, besloot ik voor mijn jurymoment een meer geavanceerde en professionele oplossing te bouwen. Ik ben gestart vanaf nul, maar heb na enkele dagen gekozen om te werken met een bestaande template als basis.
+After completing my internship in May 2025, I decided to build a more advanced and professional solution for my jury presentation. I started from scratch, but after a few days, I chose to work with an existing template as a base.
 
-Achteraf gezien was dit een goede keuze, omdat het eindresultaat positief werd ontvangen door de juryleden.
- 
+In hindsight, this was a good choice, as the final result was positively received by the jury members.
 
-## 🕒 Wanneer ben ik begonnen aan dit project?
-Dit project is gestart eind mei 2025 en wordt tot op heden nog steeds verder geüpdatet en verbeterd.
+## 🕒 When did I start this project?
+This project started in late May 2025 and is still being further updated and improved to this day.
 
-## 🛠️ Technologieën
+## 🛠️ Technologies
 - Laravel (PHP framework)
 - PHP
 - Blade templating engine
@@ -31,17 +30,18 @@ Dit project is gestart eind mei 2025 en wordt tot op heden nog steeds verder ge�
 - Bootstrap
 - Node.js & npm
 
-## 📁 Projectstructuur
-De website is opgebouwd volgens het MVC-patroon van Laravel:
-- **Models**: halen data op uit de gekoppelde MySQL database via Eloquent ORM
-- **Views**: opgebouwd met Blade templates
-- **Controllers**: behandelen de logica en verschillende acties omtrent dataverwerking
+## 📁 Project architecture
+The website is built according to the Laravel MVC pattern:
 
-Alle inhoud (projecten, opleidingen, werkervaring en skills) worden dynamisch vanuit de database ingeladen.
+- **Models**: retrieve data from the linked MySQL database via Eloquent ORM
+- **Views**: built using Blade templates
+- **Controllers**: handle the logic and various actions regarding data processing
 
-## ⚙️ Installatie & setup
+All content (projects, education, work experience, and skills) is dynamically loaded from the database.
 
-Volg deze stappen om het project lokaal te draaien:
+## ⚙️ Installation & setup
+
+Follow these steps to run the project locally:
 
 ```bash
 # Clone project locally
@@ -63,20 +63,20 @@ php artisan migrate --seed
 npm run dev
 php artisan serve
 ```
-### Vereisten
+### Requirements
 - PHP 8+
 - Composer
 - Node.js & npm
 - MySQL
 
-
-## 🔮 Toekomstige verbeteringen
-- Meertaligheid toevoegen aan de website
-- Detailpagina's per project
+## 🔮 Future changes & improvements
+- Add multilingualism to the website
+- Detail pages per project
 
 ## 📸 Screenshots
-Hieronder staat een screenshot van de landing page van het portfolio.
+Below is a screenshot of the portfolio landing page (in Dutch).
 ![screenshot_landing-page](public/assets/imgs/screenshot-landing-page.png)
 
-## 🌐 English version
-To those who are English speaking, you can read the translated version of this README by selecting the `README_EN.md` file.
+## 🌐 Languages
+- English (current)
+- Dutch: [`README_NL.md`](README_NL.md)
