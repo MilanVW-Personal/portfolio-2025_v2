@@ -18,7 +18,7 @@
 
         <div class="row gy-4 justify-content-center">
             <div class="col-lg-4">
-                <img src="{{url("assets/imgs/me-about.jpg")}}" class="img-fluid" alt="foto_van_mezelf">
+                <img src="{{url("assets/imgs/me-about-v3-1.jpg")}}" class="img-fluid" alt="foto_van_mezelf">
             </div>
             <div class="col-lg-8 content">
             <h2>Developer | IT-professional | Customer Experience Driven</h2>

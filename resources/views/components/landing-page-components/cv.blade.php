@@ -50,7 +50,7 @@
                         <li>Berlaar, Antwerpen, België</li>
                         <li>+32 (0) 471 01 31 47</li>
                         <li>vanwinkelmilan@gmail.com</li>
-                        <li>Rijbewijs B: voorlopig rijbewijs in bezit</li>
+                        <li>Rijbewijs B: voorlopig rijbewijs</li>
                     </ul>
                 </div>  
 
@@ -70,7 +70,13 @@
                             }
                         @endphp    
                     </em></p>
-                    <p class="pt-[15px]">{{$opleidingen->first()->opleidingDesc}}</p>
+                    <ul class="list-disc pl-5 pt-[15px]">
+                        @foreach(explode('- ', $opleidingen->first()->opleidingDesc) as $item)
+                            @if(trim($item) !== '')
+                                <li class="whitespace-pre-wrap">{{ trim($item) }}</li>
+                            @endif
+                        @endforeach
+                    </ul>
                 </div>     
 
                 <div class="resume-item">
@@ -89,7 +95,13 @@
                             @endphp    
                         </em>
                     </p>
-                    <p class="pt-[15px]">{{$opleidingen->last()->opleidingDesc}}</p>
+                        <ul class="list-disc pl-5 pt-[15px]">
+                        @foreach(explode('- ', $opleidingen->last()->opleidingDesc) as $item)
+                            @if(trim($item) !== '')
+                                <li class="whitespace-pre-wrap">{{ trim($item) }}</li>
+                            @endif
+                        @endforeach
+                    </ul>
                 </div>  
 
             </div>
@@ -107,10 +119,12 @@
                             @endif
                         </h5>
                         <p><em>{{$ervaring->locatie}}</em></p>
-                        <ul>
-                            <li class="pt-[15px]">
-                               {{$ervaring->ervaringDesc}}
-                            </li>
+                        <ul class="list-disc pl-5 pt-[15px]">
+                            @foreach(explode('- ', $ervaring->ervaringDesc) as $item)
+                                @if(trim($item) !== '')
+                                    <li class="whitespace-pre-wrap">{{ trim($item) }}</li>
+                                @endif
+                            @endforeach
                         </ul>
                     </div>  
                 @endforeach
