@@ -1,6 +1,6 @@
 @php
     $fullTimePeriod = "";
-    function changeDateLanguage($month_of_startDate, $month_of_endDate, $startDate, $endDate) {
+    function changeDateLanguage($month_of_startDate, $month_of_endDate = null, $startDate, $endDate = null) {
 
         $startDateMonthAndYear = match($month_of_startDate) {
             "January" => "Januari".' '.$startDate->format("Y"),
@@ -14,20 +14,25 @@
             default => $startDate->format("F").' '.$startDate->format("Y"),
         };
 
-        $endDateMonthAndYear = match($month_of_endDate) {
-            "January" => "Januari".' '.$endDate->format("Y"),
-            "February" => "Februari".' '.$endDate->format("Y"),
-            "March" => "Maart".' '.$endDate->format("Y"),
-            "May" => "Mei".' '.$endDate->format("Y"),
-            "June" => "Juni".' '.$endDate->format("Y"),
-            "July" => "Juli".' '.$endDate->format("Y"),
-            "August" => "Augustus".' '.$endDate->format("Y"),
-            "October" => "Oktober".' '.$endDate->format("Y"),
-            default => $endDate->format("F").' '.$endDate->format("Y"),
-        };
-        
-        $fullTimePeriod = $startDateMonthAndYear.' - '.$endDateMonthAndYear;
-        echo $fullTimePeriod;
+        if ($endDate === null) {
+           return $startDateMonthAndYear;
+        }
+        else {
+            $endDateMonthAndYear = match($month_of_endDate) {
+                "January" => "Januari".' '.$endDate->format("Y"),
+                "February" => "Februari".' '.$endDate->format("Y"),
+                "March" => "Maart".' '.$endDate->format("Y"),
+                "May" => "Mei".' '.$endDate->format("Y"),
+                "June" => "Juni".' '.$endDate->format("Y"),
+                "July" => "Juli".' '.$endDate->format("Y"),
+                "August" => "Augustus".' '.$endDate->format("Y"),
+                "October" => "Oktober".' '.$endDate->format("Y"),
+                default => $endDate->format("F").' '.$endDate->format("Y"),
+            };
+            
+            $fullTimePeriod = $startDateMonthAndYear.' - '.$endDateMonthAndYear;
+            return $fullTimePeriod;
+        }
     }
 @endphp
 
@@ -115,7 +120,7 @@
                             @if($ervaring->start->format("Y-m-d") !== $ervaring->end->format("Y-m-d"))
                                 {{changeDateLanguage($ervaring->start->format("F"), $ervaring->end->format("F"), $ervaring->start, $ervaring->end)}}:
                             @else
-                                {{$ervaring->start->format("d F Y").' ('.$ervaring->start->format("H\ui").' - '.$ervaring->end->format("H\ui").')'}}:
+                                {{$ervaring->start->format("d").' '.changeDateLanguage($ervaring->start->format("F"), null, $ervaring->start, null).' ('. $ervaring->start->format("H\ui").' - '. $ervaring->end->format("H\ui").')'}}:
                             @endif
                         </h5>
                         <p><em>{{$ervaring->locatie}}</em></p>
